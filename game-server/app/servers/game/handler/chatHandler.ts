@@ -74,14 +74,11 @@ export class Handler {
             });
         } else {
             let tuid = msg.target + '*' + rid;;
-            console.info(rid, Channel.getMember(tuid))
             let tsid = Channel.getMember(tuid)['sid'];
             channelService.pushMessageByUids('onChat', param, [{
                 uid: tuid,
                 sid: tsid
-            }], function (a, b) {
-                console.info(a, b)
-            });
+            }]);
         }
 
         return { route: msg.route }
