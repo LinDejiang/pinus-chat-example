@@ -3,9 +3,9 @@
   "description": "Main app boot component",
   "dependencies": {
     "component/emitter":"master",
-    "node-pinus/pinus-protocol": "master",
-    "pinusnode/pinus-protobuf": "*",
-    "pinusnode/pinus-jsclient-websocket": "master"
+    "NetEase/pomelo-protocol": "master",
+    "pomelonode/pomelo-protobuf": "master",
+    "pomelonode/pomelo-jsclient-websocket": "master"
   },
   "scripts": ["index.js"]
 }
