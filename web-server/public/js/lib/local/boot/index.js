@@ -1,11 +1,11 @@
   var Emitter = require('emitter');
   window.EventEmitter = Emitter;
 
-  var protocol = require('pinus-protocol');
+  var protocol = require('pomelo-protocol');
   window.Protocol = protocol;
   
-  var protobuf = require('pinus-protobuf');
+  var protobuf = require('pomelo-protobuf');
   window.protobuf = protobuf;
   
-  var pinus = require('pinus-jsclient-websocket');
-  window.pinus = pinus;
+  var pomelo = require('pomelo-jsclient-websocket');
+  window.pomelo = pomelo;
