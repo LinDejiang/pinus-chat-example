@@ -1,5 +1,4 @@
 import { Application, FrontendSession } from 'pinus';
-import { Session } from 'inspector';
 
 export default function (app: Application) {
     return new Handler(app);
@@ -43,7 +42,7 @@ export class Handler {
         session.on('closed', this.onUserLeave.bind(null, self.app))
         //console.info(self.app.rpc.game.gameRemote)
         let users = await self.app.rpc.game.gameRemote.add(session, uid, self.app.get("serverId"), rid, true);
-
+        
         return { code: 200, users: users };
     }
 

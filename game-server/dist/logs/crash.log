@@ -1,4 +1,0 @@
-[2020-02-28T16:43:06.266] [INFO] crash-log - [master-server-1 master.js] [gate],[gate-server-1],[1582879386266],[disconnect]
-[2020-02-28T16:43:11.293] [INFO] crash-log - [master-server-1 master.js] [game],[game-server_1],[1582879391293],[disconnect]
-[2020-02-28T16:43:16.332] [INFO] crash-log - [master-server-1 master.js] [connector],[connector-server-1],[1582879396332],[disconnect]
-[2020-02-28T19:30:53.853] [INFO] crash-log - [master-server-1 master.js] [game],[game-server_1],[1582889453853],[disconnect]

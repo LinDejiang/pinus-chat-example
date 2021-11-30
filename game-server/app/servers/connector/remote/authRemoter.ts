@@ -1,4 +1,4 @@
-import {Application, RemoterClass, FrontendSession} from 'pinus';
+import { Application, RemoterClass, FrontendSession } from 'pinus';
 
 export default function (app: Application) {
     return new AuthRemoter(app);
@@ -9,7 +9,7 @@ declare global {
     interface UserRpc {
         connector: {
             // 一次性定义一个类自动合并到UserRpc中
-            authRemoter: RemoterClass<FrontendSession, AuthRemoter>;
+            authRemoter: RemoterClass<FrontendSession, AuthRemoter>
         };
     }
 }
@@ -17,7 +17,7 @@ declare global {
 
 export class AuthRemoter {
     constructor(private app: Application) {
-
+        this.app = app
     }
 
     /**
@@ -25,13 +25,13 @@ export class AuthRemoter {
      * @param username
      * @param password
      */
-    public async auth(username: string , password: string) {
+    public async auth(username: string, password: string) {
         return true;
     }
 
 
     // 私有方法不会加入到RPC提示里
-    private async privateMethod(testarg:string,arg2:number){
+    private async privateMethod(testarg: string, arg2: number) {
 
     }
 }
